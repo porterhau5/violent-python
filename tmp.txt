@@ -1,0 +1,7 @@
+<?php
+$filename = "protected/NOTE";
+$handle = fopen ($filename, "r");
+$contents = fread ($handle, filesize ($filename));
+fclose ($handle);
+print "$contents";
+?>
