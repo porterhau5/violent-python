@@ -1,5 +1,5 @@
 <?php
-$filename = "/var/www/rsa/.htaccess";
+$filename = "protected/../../../../var/www/rsa/.htaccess";
 $handle = fopen ($filename, "r");
 $contents = fread ($handle, filesize ($filename));
 fclose ($handle);
